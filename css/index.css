@@ -11,6 +11,7 @@
 }
 .topPage img {
   width: 170px;
+  height: 170px;
   margin-left: 195px;
 }
 @media screen and (max-width: 667px) {
@@ -69,6 +70,7 @@
   background: url(https://images.unsplash.com/photo-1505562626914-1db0937ea292?ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80) no-repeat;
   margin-left: 195px;
   background-size: 875px;
+  background-position: center left;
 }
 @media screen and (max-width: 667px) {
   .mission {
@@ -210,63 +212,71 @@
 }
 .topMid {
   display: flex;
+  text-align: center;
 }
-.panda {
+.topMid .panda {
   width: 150px;
   margin-left: 50px;
 }
 @media screen and (max-width: 667px) {
-  .panda {
+  .topMid .panda {
     margin-left: 15px;
-    width: 100px;
-    height: 150px;
+    width: 50%;
   }
 }
-.mam {
+.topMid .mam {
   width: 150px;
   margin-left: 50px;
   width: 158px;
 }
 @media screen and (max-width: 667px) {
-  .mam {
+  .topMid .mam {
     margin-left: 15px;
-    width: 100px;
-    height: 150px;
+    width: 50%;
   }
 }
-.turtle {
+@media screen and (max-width: 667px) {
+  .topMid .mam {
+    display: none;
+  }
+}
+.topMid .turtle {
   width: 150px;
   margin-left: 50px;
   height: 225px;
 }
 @media screen and (max-width: 667px) {
-  .turtle {
+  .topMid .turtle {
     margin-left: 15px;
-    width: 100px;
-    height: 150px;
+    width: 50%;
   }
 }
-.info img {
+@media screen and (max-width: 667px) {
+  .topMid .turtle {
+    display: none;
+  }
+}
+.topMid .info img {
   margin-top: -46px;
   border-radius: 3px;
 }
 @media screen and (max-width: 667px) {
-  .info img {
+  .topMid .info img {
     margin-top: 10px;
   }
 }
-.info p {
+.topMid .info p {
   margin-left: 50px;
   line-height: 2;
   font-size: 14px;
 }
 @media screen and (max-width: 667px) {
-  .info p {
+  .topMid .info p {
     margin: 0;
     text-align: center;
   }
 }
-.info hr {
+.topMid .info hr {
   height: 1px;
   background-color: black;
   border: none;
@@ -275,8 +285,14 @@
   margin-top: -3px;
 }
 @media screen and (max-width: 667px) {
-  .info hr {
+  .topMid .info hr {
     margin: 0;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 667px) {
+  .hi-slide {
+    width: 20%;
   }
 }
 .hi-slide {
@@ -432,10 +448,11 @@ hr {
   height: 1px;
   background-color: black;
   border: none;
-  width: 70%;
+  width: 50%;
+  margin-bottom: 50px;
 }
 #lauren {
-  width: 200px;
+  width: 180px;
 }
 html {
   scroll-behavior: smooth;

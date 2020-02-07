@@ -88,7 +88,7 @@
 	}
 
 	/*"Forgot password" text */
-#psw {
+	#psw {
 		.donate();
 		align-items: center;
 		padding-top: 24px;
@@ -105,65 +105,74 @@
 
 .topMid {
 	display: flex;
-}
+	text-align: center;
 
-.panda {
-	width: 150px;
-	margin-left: 50px;
 
-	@media screen and (max-width: 667px) {
-		margin-left: 15px;
-		width: 100px;
-		height: 150px;
-	}
-}
-
-.mam {
-	.panda();
-	width: 158px;
-
-}
-
-.turtle {
-	.panda();
-	height: 225px;
-}
-
-.info {
-	@media screen and (max-width: 667px) {}
-
-	img {
-		margin-top: -46px;
-		border-radius: 3px;
-
-		@media screen and (max-width: 667px) {
-			margin-top: 10px;
-
-		}
-
-	}
-
-	p {
+	.panda {
+		width: 150px;
 		margin-left: 50px;
-		line-height: 2;
-		font-size: 14px;
 
 		@media screen and (max-width: 667px) {
-			margin: 0;
-			text-align: center;
+			margin-left: 15px;
+			width: 50%;
 		}
 	}
 
-	hr {
-		height: 1px;
-		background-color: @blck;
-		border: none;
-		width: 100%;
-		margin-left: 52px;
-		margin-top: -3px;
+	.mam {
+		.panda();
+		width: 158px;
 
 		@media screen and (max-width: 667px) {
-			margin: 0;
+			display: none;
+		}
+	}
+
+	.turtle {
+		.panda();
+		height: 225px;
+
+		@media screen and (max-width: 667px) {
+			display: none;
+		}
+	}
+
+	.info {
+		@media screen and (max-width: 667px) {}
+
+		img {
+			margin-top: -46px;
+			border-radius: 3px;
+
+			@media screen and (max-width: 667px) {
+				margin-top: 10px;
+
+			}
+
+		}
+
+		p {
+			margin-left: 50px;
+			line-height: 2;
+			font-size: 14px;
+
+			@media screen and (max-width: 667px) {
+				margin: 0;
+				text-align: center;
+			}
+		}
+
+		hr {
+			height: 1px;
+			background-color: @blck;
+			border: none;
+			width: 100%;
+			margin-left: 52px;
+			margin-top: -3px;
+
+			@media screen and (max-width: 667px) {
+				margin: 0;
+				justify-content: center;
+			}
 		}
 	}
 }
