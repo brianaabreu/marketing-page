@@ -373,6 +373,11 @@
   text-decoration: none;
   color: blue;
 }
+@media screen and (max-width: 667px) {
+  #title {
+    display: none;
+  }
+}
 footer {
   background-color: #ffecd5;
   width: 100%;
