@@ -292,7 +292,7 @@
 }
 @media screen and (max-width: 667px) {
   .hi-slide {
-    width: 20%;
+    display: none;
   }
 }
 .hi-slide {
